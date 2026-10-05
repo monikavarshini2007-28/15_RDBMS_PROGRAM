@@ -1,1 +1,11 @@
 
+DECLARE
+Marks NUMBER := 65;
+BEGIN
+IF Marks >= 40 THEN
+DBMS_OUTPUT.PUT_LINE('Student Passed');
+ELSE
+DBMS_OUTPUT.PUT_LINE('Student Failed');
+END IF;
+END;
+/
