@@ -1,4 +1,5 @@
-
+create database STUDENTPASS;
+use STUDENTPASS;
 DECLARE
 Marks NUMBER := 65;
 BEGIN
