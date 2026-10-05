@@ -1,12 +1,29 @@
 create database STUDENTPASS;
 use STUDENTPASS;
+CREATE TABLE StudentMarks (
+StudentID NUMBER PRIMARY KEY,
+StudentName VARCHAR2(30),
+Marks NUMBER
+);
+
+INSERT INTO StudentMarks VALUES (1001, 'Arun', 75);
+INSERT INTO StudentMarks VALUES (1002, 'Divya', 35);
+INSERT INTO StudentMarks VALUES (1003, 'Karthik', 82);
+
+COMMIT;
+
+SET SERVEROUTPUT ON;
+
 DECLARE
-Marks NUMBER := 65;
+V_Marks NUMBER := 75;
 BEGIN
-IF Marks >= 40 THEN
+IF V_Marks >= 40 THEN
 DBMS_OUTPUT.PUT_LINE('Student Passed');
 ELSE
 DBMS_OUTPUT.PUT_LINE('Student Failed');
 END IF;
 END;
 /
+
+
+
